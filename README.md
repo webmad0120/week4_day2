@@ -8,15 +8,23 @@
 
 - Crear un servidor básico con rutas y archivos estáticos en Express supone:
   - Requerir Express
-  - Instanciar la aplicación a partir de Express
-  - Incluir el *middleware* de directorio con archivos estáticos `public`
-  - Enrutar
-  - Levantar el servidor
     ````javascript
     const express = require('express')
+    ````
+  - Instanciar la aplicación a partir de Express
+      ````javascript
     const app = express()
+    ````
+  - Incluir el *middleware* de directorio con archivos estáticos `public`
+      ````javascript
     app.use(express.static('public'))
+    ````
+  - Enrutar
+      ````javascript
     app.get('/', (req, res) => res.send(`<h1>Hi there!</h1>`))
+    ````
+  - Levantar el servidor
+    ````javascript
     app.listen(3000, () => console.log("Servidor levantado..."))
     ````
   
