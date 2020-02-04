@@ -38,7 +38,7 @@
   - `nodemon`*`nombre_archivo`*: escucha los cambios realizados en el archivo indicado.
   
 ## Main points: objeto response
-- El objeto `response` dispone de dos métodos para mostrar información en una ruta:
+- El objeto `response` dispone de dos métodos para mostrar información en el cliente:
   - `.send()`: muestra el código pasado como argumento en el cliente.
   - `.sendFile()`: muestra en el cliente el archivo enlazado mediante el path absoluto argumentado.
   
