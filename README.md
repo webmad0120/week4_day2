@@ -12,20 +12,20 @@
     const express = require('express')
     ````
   - Instanciar la aplicación a partir de Express
-      ````javascript
+    ````javascript
     const app = express()
     ````
   - Incluir el *middleware* de directorio con archivos estáticos `public`
-      ````javascript
+    ````javascript
     app.use(express.static('public'))
     ````
   - Enrutar
-      ````javascript
-    app.get('/', (req, res) => res.send(`<h1>Hi there!</h1>`))
+    ````javascript
+    app.get('/', (req, res) => res.send('<h1>Hi there!</h1>'))
     ````
   - Levantar el servidor
     ````javascript
-    app.listen(3000, () => console.log("Servidor levantado..."))
+    app.listen(3000, () => console.log("Server listening on port 3000"))
     ````
   
 - Enrutar supone hacer uso del método `.get()`o `.post()` de la aplicación instanciada, recibiendo como argumentos:
